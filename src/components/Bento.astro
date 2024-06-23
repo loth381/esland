@@ -1,0 +1,90 @@
+---
+import BentoItem from "./BentoItem.astro";
+---
+
+<section
+  class={`w-full max-w-[1400px] grid grid-cols-10 auto-rows-[30rem] gap-4 mx-auto p-20`}
+>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="ANDORRA: EL CÉNITDE LOS PREMIOS ESLAND"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+        -z-10 h-full w-full bg-blue-950
+        bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/mountain.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-full">
+      Una nueva edición cargada de novedades y contenido, que empezará varias
+      semanas antes de la ansiada gala. <strong
+        >Directos especiales, colaboraciones, conciertos y mucho más</strong
+      > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="LA ALFOMBRA BLANCA Y LA GALA"
+    subtitle="16 de febrero de 2024"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-800
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/pistas.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-full">
+      Una nueva edición cargada de novedades y contenido, que empezará varias
+      semanas antes de la ansiada gala. <strong
+        >Directos especiales, colaboraciones, conciertos y mucho más</strong
+      > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+    </p>
+  </BentoItem>
+
+  <BentoItem
+    class="col-span-10 md:col-span-6"
+    title="La GALA"
+    subtitle="17 de febrero de 2024"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-900
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/grefg.webp')"
+    >
+    </div>
+    <p slot="content" class="max-w-full">
+      Una nueva edición cargada de novedades y contenido, que empezará varias
+      semanas antes de la ansiada gala. <strong
+        >Directos especiales, colaboraciones, conciertos y mucho más</strong
+      > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+    </p>
+  </BentoItem>
+  <BentoItem
+    class="col-span-10 md:col-span-4"
+    title="DISFRUTA DEL REDDIT DE LA COMUNIDAD"
+  >
+    <div
+      slot="image"
+      class="background transition-scale absolute bottom-0 left-0 top-0
+    -z-10 h-full w-full bg-blue-950
+    bg-cover bg-center bg-no-repeat opacity-90 bg-blend-luminosity duration-1000 ease-in-out group-hover:scale-110"
+      style="background-image: url('/laptop.webp')"
+    >
+    </div>
+
+    <p slot="content" class="max-w-full">
+      Una nueva edición cargada de novedades y contenido, que empezará varias
+      semanas antes de la ansiada gala. <strong
+        >Directos especiales, colaboraciones, conciertos y mucho más</strong
+      > en lo que será una auténtica fiesta dedicada a la creación de contenido.
+    </p>
+  </BentoItem>
+</section>
