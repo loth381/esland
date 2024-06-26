@@ -1,13 +1,14 @@
 ---
-import Button from "@/components/Button.astro";
-import Logo from "@/components/Logo.astro";
+import Button from "@/components/Button.tsx"
+import HeaderLink from "@/components/HeaderLink.astro"
+import LanguageSelector from "@/components/LanguageSelector.astro"
+import Logo from "@/components/Logo.astro"
 
-import HeaderLink from "@/components/HeaderLink.astro";
+import CloseIcon from "@/components/icons/Close.astro"
+import MenuIcon from "@/components/icons/Menu.astro"
 
-
-
-import { getI18N } from "@/i18n/index";
-import { getLangFromUrl, useTranslatedPath, useTranslations, } from '../i18n/utils';
+import { getI18N } from "@/i18n/index"
+import { getLangFromUrl, useTranslatedPath, useTranslations, } from '../i18n/utils'
 
 const { currentLocale } = Astro
 const i18n = getI18N({ currentLocale })
@@ -43,7 +44,7 @@ const translatePath = useTranslatedPath(lang);
       <HeaderLink class="text__glowing" href={translatePath('/archivo/')}>
         {t('nav.archivo')}
       </HeaderLink>
-
+      <LanguageSelector />
       <Button
         className="md:py-2 md:ml-auto md:text-base lg:text-base"
         url="https://drive.google.com/file/d/1D7IvIqMyqAoG58fuk8bc0JvhAmrWBbOK/view"
@@ -51,8 +52,9 @@ const translatePath = useTranslatedPath(lang);
         {i18n.HEADER_BUTTON}
       </Button>
       <a href="#header-nav" class="md:hidden absolute top-6 right-6">
-
+        <CloseIcon />
       </a>
     </nav>
+    <a href="#header-menu" class="md:hidden"><MenuIcon /></a>
   </div>
 </header>

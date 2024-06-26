@@ -1,11 +1,11 @@
 ---
-import Button from "@/components/Button.astro"
-import HeroContainer from "@/components/HeroContainer.astro"
-import Numeros from "@/components/Numeros.astro"
 import Layout from "@/layouts/Layout.astro"
 
-import { getI18N } from "@/i18n"
+import Button from "@/components/Button"
+import HeroContainer from "@/components/HeroContainer.astro"
 
+import { getI18N } from "@/i18n"
+import Editions from "../Editions"
 
 const edicion = "2"
 const { currentLocale } = Astro
@@ -32,6 +32,6 @@ const i18n = getI18N({ currentLocale })
   </HeroContainer>
 
   <main class="pb-24">
-    <Numeros />
+    <Editions i18n={i18n} client:load/>
   </main>
 </Layout>
